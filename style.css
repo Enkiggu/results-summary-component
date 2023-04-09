@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #FEFEFF;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* YOUR-RESULT START */
+
+.your-result{
+    height: 40vh;
+    width: 40vh;
+    float: left;
+    border-radius: 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(99, 65, 253, 0.8) 0%, rgba(99, 65, 253, 1) 100%);
+}
+
+.your-result h4{
+    color: #CEC2FF;
+    font-size: 20px;
+    padding: 1.5rem 0;
+}
+
+.your-result .circle{
+    background: linear-gradient(to bottom, rgba(99, 65, 253, 1) 0%, rgba(99, 65, 253, 0.8) 50%, rgba(99, 65, 253, 0.6) 75%, rgba(99, 65, 253, 0.4) 100%);
+    border-radius: 50%;
+    width: 100%;
+    margin: 1rem 1rem;
+    max-width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.your-result .circle h1{
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 40px;
+}
+
+.your-result .circle p{
+    color: #8679FE;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.your-result h2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+.your-result p{
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+/* YOUR-RESULT END */
+
+/* SUMMARY START */
+
+.summary{
+    padding-left: 30px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow:
+  4.1px 2px 2.7px rgba(0, 0, 0, 0.016),
+  10.3px 5px 6.9px rgba(0, 0, 0, 0.022),
+  20.9px 10.3px 14.2px rgba(0, 0, 0, 0.028),
+  43.1px 21.2px 29.2px rgba(0, 0, 0, 0.034),
+  118px 58px 80px rgba(0, 0, 0, 0.05);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.summary a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background-color: #303A58;
+    margin: 1rem 1rem;
+    transition: 0.5s;
+}
+.summary a:hover{
+    opacity: 0.9;
+}
+
+.summary-item{
+    display: flex;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    margin: 1rem 1rem;
+    position: relative;
+}
+
+.summary-item p{
+    padding-left: 7rem;
+    margin-top: 0.4rem;
+    font-weight: bold;
+    color: #313240;
+}
+
+#span-head{
+    color: #DD8988;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.summary-item i{
+    color: #DD8988;
+    font-size: 15px;
+    margin-top: 0.6rem;
+}
+
+
+.summary-item span{
+    color: #CEC2FF;
+}
+
+.item-1{
+    background-color: #FFF6F5;
+}
+
+.item-2{
+    background-color: #FFFBF2;
+}
+.item-2 #span-head, .item-2 i{
+    color: #E5B354 !important;
+}
+
+.item-3{
+    background-color: #F2FAFB;
+}
+
+.item-3 #span-head, .item-3 i{
+    color: #7AE2C9 !important;
+}
+
+.item-4{
+    background-color: #F2F3FC;
+}
+
+.item-4 #span-head, .item-4 i{
+    color: #525bb4 !important;
+}
+/* SUMMARY END */
+
+/* RESPONSIVE DESIGN*/
+
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+    .your-result{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: 20px;
+    }
+    .summary{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+    }
+    .summary a{
+        font-size: 10px;
+        margin: 1rem 3rem;
+    }
+
+    .summary-item p{
+        padding-left: 3rem;
+        font-size: 10px;
+    }
+    .summary-list{
+        padding-right: 30px;
+    }
+    #span-head{
+        padding-top: 4px;
+        padding-right: 50px;
+        font-size: 11px;
+    }
+}
+
+
